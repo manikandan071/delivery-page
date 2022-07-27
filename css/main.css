@@ -1,0 +1,141 @@
+.container{
+    width: 1117px;
+    margin: auto;
+    outline: solid 2px;
+}
+.flex-quickcontact{
+    display: flex;
+    height: 74px;
+    outline: solid 2px red;
+}
+.flex-banner{
+    display: flex;
+    height: 650px;
+}
+.flex-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-content .contents{
+    width: 33.33%;
+    height: 333px;
+    outline: solid 2px red;
+}
+.flex-about{
+    display: flex;
+}
+.about-text, 
+.about-video{
+    width: 50%;
+    height: 580px;
+    
+}
+.flex-services{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-services .services{
+    width: 33.33%;
+    height: 450px;
+    outline: solid 2px red;
+}
+.flex-action{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+.flex-features1,
+.flex-features2,
+.flex-features3,
+.flex-features4{
+    display: flex;
+}
+.features-image1{
+    width: 40%;
+    height: 386px;
+    outline: solid 2px red;
+}
+.features-text1{
+    width: 60%;
+    height: 386px;
+    outline: solid 2px red;
+}
+.features-image2,
+.features-image3,
+.features-image4{
+    width: 40%;
+    height: 430px;
+    outline: solid 2px red;
+}
+.features-text2,
+.features-text3,
+.features-text4{
+    width: 60%;
+    height: 430px;
+    outline: solid 2px red;
+}
+.flex-plan{
+    display: flex;
+}
+.flex-plan .plan{
+    width: 33.33%;
+    height: 870px;
+    outline: solid 2px red;
+}
+.flex-profile{
+    display: flex;
+    height: 485px;
+}
+.flex-questions{
+    display: flex;
+    height: 630px;
+}
+.flex-footer{
+    display: flex;
+}
+.socialmedia{
+    width: 477px;
+    height: 306px;
+    outline: solid 2px red;
+}
+.usefullinks,
+.ourservice{
+    width: 190px;
+    height: 306px;
+    outline: solid 2px red;
+}
+.contactus{
+    width: 260px;
+    height: 306px;
+    outline: solid 2px red;
+}
+.flex-legel{
+    display: flex;
+    justify-content: center;
+    height: 94px;
+}
+.about-title h3{
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.about-title p{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.about-order{
+    margin-left: 70px;
+}
+.about-order h4{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 17px;
+}
+.about-order p{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.about-source{
+    width: 100%;
+}
+
