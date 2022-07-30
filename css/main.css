@@ -1,7 +1,7 @@
 .container{
-    width: 1117px;
+    width: 82.5%;
     margin: auto;
-    outline: solid 2px;
+    /* outline: solid 2px; */
 }
 .flex-quickcontact{
     display: flex;
@@ -44,35 +44,24 @@
     justify-content: center;
     height: 400px;
 }
-.flex-features1,
-.flex-features2,
-.flex-features3,
-.flex-features4{
+.features-list{
     display: flex;
 }
-.features-image1{
-    width: 40%;
-    height: 386px;
-    outline: solid 2px red;
+.features-image1 {
+    width: 42%;
+    
 }
-.features-text1{
-    width: 60%;
-    height: 386px;
-    outline: solid 2px red;
+.features-text1 {
+    width: 58%;
+    
 }
-.features-image2,
-.features-image3,
-.features-image4{
-    width: 40%;
-    height: 430px;
-    outline: solid 2px red;
+.features-image2 {
+    width: 42%;
+    
 }
-.features-text2,
-.features-text3,
-.features-text4{
-    width: 60%;
-    height: 430px;
-    outline: solid 2px red;
+.features-text2 {
+    width: 58%;
+    
 }
 .flex-plan{
     display: flex;
@@ -94,18 +83,18 @@
     display: flex;
 }
 .socialmedia{
-    width: 477px;
+    width: 40%;
     height: 306px;
     outline: solid 2px red;
 }
 .usefullinks,
 .ourservice{
-    width: 190px;
+    width: 20%;
     height: 306px;
     outline: solid 2px red;
 }
 .contactus{
-    width: 260px;
+    width: 20%;
     height: 306px;
     outline: solid 2px red;
 }
@@ -114,28 +103,124 @@
     justify-content: center;
     height: 94px;
 }
+
+/* first about section practice------------------- */
+
+
+.flex-about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .about-title h3{
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 600;
     padding-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+    color: #001f8d;
 }
 .about-title p{
-    font-size: 20px;
+    font-size: 17px;
     padding-bottom: 30px;
+    line-height: 25px;
+    font-family: "Open Sans", sans-serif;
 }
 .about-order{
-    margin-left: 70px;
+    display: flex;
+    width: 100%;
+}
+.about-order .about-icon{
+    width: 12%;
+}
+.about-order .about-content{
+    width: 88%;
+}
+.about-order .about-icon{
+    text-align: left;
+    font-size: 50px;
+    color: blueviolet;
 }
 .about-order h4{
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
     padding-bottom: 17px;
+    font-family: "Open Sans", sans-serif;
+    color: #19335c;
 }
 .about-order p{
-    font-size: 20px;
+    font-size: 17px;
     padding-bottom: 30px;
+    line-height: 25px;
+    font-family: "Open Sans", sans-serif;
 }
 .about-source{
     width: 100%;
 }
 
+
+/* about section ends ----------------------- */
+
+/* feature section practice ------------------------*/
+
+.features-list{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.features-src{
+    width: 100%;
+}
+.features-text1 {
+    padding-left: 22px;
+}
+.features-text1 h3{
+    font-size: 27px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    line-height: 35px;
+    color: #001973;
+    padding-top: 20px;
+}
+.features-text1 p{
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    line-height: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.features-text1 ul li{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+.features-text1 ul li i{
+    padding-right: 10px;
+    color: #0d42ff;
+}
+
+.features-text2 h3{
+    font-size: 27px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    line-height: 35px;
+    color: #001973;
+    padding-top: 50px;
+}
+.features-text2 p{
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    line-height: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+}
+
+.features-text2 .features-text2-para{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    padding-right: 25px;
+}
