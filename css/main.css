@@ -1,3 +1,34 @@
+:root {
+    --color-default: #0a0d13;
+    --color-primary: #0d42ff;
+    --color-secondary: #0e1d34;
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Inter", sans-serif;
+    --font-secondary: "Poppins", sans-serif;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+body {
+    font-family: var(--font-default);
+    color: var(--color-default);
+}
+
+
+
+
+
+
+
+
 .container{
     width: 82.5%;
     margin: auto;
@@ -21,29 +52,7 @@
     height: 333px;
     outline: solid 2px red;
 }
-.flex-about{
-    display: flex;
-}
-.about-text, 
-.about-video{
-    width: 50%;
-    height: 580px;
-    
-}
-.flex-services{
-    display: flex;
-    flex-wrap: wrap;
-}
-.flex-services .services{
-    width: 33.33%;
-    height: 450px;
-    outline: solid 2px red;
-}
-.flex-action{
-    display: flex;
-    justify-content: center;
-    height: 400px;
-}
+
 .features-list{
     display: flex;
 }
@@ -79,30 +88,7 @@
     display: flex;
     height: 630px;
 }
-.flex-footer{
-    display: flex;
-}
-.socialmedia{
-    width: 40%;
-    height: 306px;
-    outline: solid 2px red;
-}
-.usefullinks,
-.ourservice{
-    width: 20%;
-    height: 306px;
-    outline: solid 2px red;
-}
-.contactus{
-    width: 20%;
-    height: 306px;
-    outline: solid 2px red;
-}
-.flex-legel{
-    display: flex;
-    justify-content: center;
-    height: 94px;
-}
+
 
 /* first about section practice------------------- */
 
@@ -111,13 +97,21 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.flex-about{
+    display: flex;
+}
+.about-text, 
+.about-video{
+    width: 50%;
+    height: auto;  
+}
 
 .about-title h3{
     font-size: 30px;
     font-weight: 600;
     padding-bottom: 15px;
     font-family: "Open Sans", sans-serif;
-    color: #001f8d;
+    color: var(--color-default);
 }
 .about-title p{
     font-size: 17px;
@@ -128,12 +122,13 @@
 .about-order{
     display: flex;
     width: 100%;
+    position: relative;
 }
 .about-order .about-icon{
-    width: 12%;
+    position: absolute;
 }
 .about-order .about-content{
-    width: 88%;
+    padding-left: 80px;
 }
 .about-order .about-icon{
     text-align: left;
@@ -143,7 +138,7 @@
 .about-order h4{
     font-size: 18px;
     font-weight: 600;
-    padding-bottom: 17px;
+    padding-bottom: 20px;
     font-family: "Open Sans", sans-serif;
     color: #19335c;
 }
@@ -160,10 +155,162 @@
 
 /* about section ends ----------------------- */
 
-/* feature section practice ------------------------*/
+
+/* -----------------services sec starts------------------------- */
+.ourservices-title{
+    text-align: center;
+}
+.ourservices-title h2{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 2;
+    color: #001973;
+    padding-bottom: 30px;
+    margin-top: 0;
+}
+.ourservices-title span{
+    position: absolute;
+    margin-top: 14px; 
+    left: 0;
+    right: 0;
+    font-size: 56px;
+    font-weight: bold;
+    color: rgba(14, 29, 52, 0.06);
+    z-index: 1;
+    line-height: 0;
+}
+.ourservices-title h2:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    background: var(--color-primary);
+    margin: auto;
+}
+
+.flex-services{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+.flex-services .services{
+    width: 33.33%;
+    padding: 14px;
+
+}
+.services-image{
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+}
+.ser-image{
+    overflow: hidden;
+    
+}
+.services-sec{
+    border: 1px solid rgba(14, 29, 52, 0.15);
+    
+}
+.services-text h3{
+    padding:25px 30px;
+    color: var(--color-primary);
+    /* font-family: var(--font-primary); */
+    font-size: 18px;
+    font-weight: 700;
+}
+.services-text p{
+    padding:0 30px;
+    margin-bottom: 30px;
+    color: var(--color-secondary);
+    font-family: var(--font-default);
+    font-size: 15px;
+    line-height: 25px;
+}
+.services-sec:hover .services-image{
+    transform: scale(1.1);
+}
+
+
+
+/* ------------------services sec end ------------------------ */
+
+/* ---------------action sec strats--------------------- */
+
+
+.action{ 
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(..//images/action/cta-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;        
+}
+.action:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 29, 52, 0.6);
+    background-position: center +50px;
+}
+.flex-action{
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+    position: relative;
+    z-index: 1;
+}
+.flex-action h2{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 27px;
+    padding-top: 110px;
+    font-weight: 700;
+}
+.flex-action p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+.flex-action .action-btn{
+    display: inline-block;
+    justify-content: center;
+    text-decoration: none;
+    width: 200px;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 10px;
+    border: 2px solid#fff;
+    border-radius: 5%;
+    transition: all 0.4s ease;
+}
+.flex-action .action-btn:hover{
+    background-color: var(--color-primary);
+    border:solid 2px var(--color-primary);
+}
+
+
+
+/* ---------------action sec ends--------------------- */
+
+/* ------------feature section practice ------------------------*/
 
 .features-list{
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 50px;
 }
 
@@ -196,6 +343,7 @@
     font-family: "Open Sans", sans-serif;
 }
 .features-text1 ul li i{
+    font-size: 20px;
     padding-right: 10px;
     color: #0d42ff;
 }
@@ -224,3 +372,258 @@
     font-family: "Open Sans", sans-serif;
     padding-right: 25px;
 }
+
+/* ---------------features sec ends---------------------------- */
+
+
+
+/* ---------------plan list starts------------------- */
+
+
+.planlist{
+    padding: 50px 0;
+}
+
+.plan-title{
+    text-align: center;
+}
+.plan-title h2{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 2;
+    color: #001973;
+    padding-bottom: 30px;
+    margin-top: 0;
+}
+.plan-title span{
+    position: absolute;
+    margin-top: 14px; 
+    left: 0;
+    right: 0;
+    font-size: 56px;
+    font-weight: bold;
+    color: rgba(14, 29, 52, 0.06);
+    z-index: 1;
+    line-height: 0;
+}
+.plan-title h2:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    background: var(--color-primary);
+    margin: auto;
+}
+
+.flex-plan{
+    display: flex;
+}
+
+.plan-box{
+    width: 33.33%;
+    padding: 15px;
+}
+.plan-sec{
+    padding: 30px 30px;
+    box-shadow: 0 0 5px rgba(14, 29, 52, 0.6);
+}
+.plan-sec h3{
+    font-size: 17px;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+.plan-sec h4{
+    position: relative;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    color: var(--color-primary);
+}
+.plan-sec h4 span{
+    font-size: 20px;
+}
+.plan-sec h4 sup{
+    font-size: 20px;
+    position: absolute;
+    left: -15px;
+}
+.plan-sec ul li{
+    line-height: 50px;
+    font-size: 18px;
+}
+.plan-sec ul li i{
+    font-size: 23px;
+    color: #059652;
+}
+.plan-sec button{
+    padding: 12px 35px;
+    font-size: 17px;
+    border: solid 1px ;
+    border-radius: 8px;
+    color: var(--color-primary);
+    background-color: #fff;
+    margin: 25px 0;
+    transition: all 0.4s ease;
+}
+.plan-sec button:hover{
+    background-color: var(--color-primary);
+    color: #fff;
+    border: solid 1px var(--color-primary);
+}
+.plan-sec .plan-btn2{
+    background-color: var(--color-primary);
+    color: #fff;
+    border: solid 1px var(--color-primary);   
+}
+
+
+/* ---------------plan list ends------------------- */
+
+/* --------------profile-sec starts-------------------- */
+
+
+.profile-section{
+    position: relative;
+    background-image: url(..//images/testimonial/testimonials-bg.jpg);
+    width: 100%;
+    height: 490px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.profile-section:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 27, 44, 0.541);
+    background-position: center +50px;
+}
+.flex-profile{
+    position: relative;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+}
+.flex-profile img{
+    width: 100px;
+    height: 100px;
+    margin-top: 80px;
+    border: 6px solid rgba(255, 255, 255, 0.185);
+    border-radius: 50%;
+}
+.flex-profile h3{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0 10px 0;
+}
+.flex-profile h4{
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 20px;
+}
+.flex-profile .icofont-star{
+    color: #ffc107;
+}
+.flex-profile p{
+    font-size: 17px;
+    line-height: 30px;
+    padding: 10px 100px;    
+}
+.flex-profile p .icofont-quote-left{
+    display: inline-block;
+    left: -5px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+/* --------------profile-sec ends-------------------- */
+
+
+/* ---------------footer starts-------------------- */
+
+.footer{
+    background-color: #0e1d34;
+    padding: 50px 0 60px 0;
+
+}
+
+.flex-footer{
+    display: flex; 
+}
+.footerlist{
+    flex: 1 0 0;
+}
+.footer-logo{
+    flex: auto 0 0;
+    width: 42%;
+}
+.footer-logo .footer-main{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-family: var(--font-primary);
+    padding: 0 0 10px 0;
+}
+.footer-logo p{
+    font-size: 15px;
+    color: #fff;
+    line-height: 20px;
+    padding: 0 30px 30px 0;
+}
+.footer-social a{
+    text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    line-height: 35px;
+    transition: all 0.4s ease;
+}
+.footer-social a:hover{
+    color: #fff;
+    border: 1px solid #fff;
+}
+.footerlist h4{
+    color: #fff;
+    font-weight: bold;
+    font-family: var(--font-primary);
+    padding-bottom: 15px;
+}
+.footerlist a{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footerlist ul li{
+    list-style: none;
+    padding: 8px 0;
+}
+.footerlist a:hover{
+    color: #fff;
+}
+.footerlist p{
+    color: #fff;
+    line-height: 25px;
+}
+
+
+/* --------------footer ends--------------------- */
