@@ -1,0 +1,253 @@
+@media (max-width: 990px){
+
+/* ======banner sec===== */
+
+.banner{
+    position: relative;
+    background-image: url(..//images/hero/hero-bg.png);
+    width: 100%;
+    min-height: 113vh;
+    background-color: var(--color-secondary);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.flex-banner{
+    display: block;
+}
+.banner-content{
+    width: 100%;
+    padding: 0 40px;
+}
+.banner-content h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 30px 0 30px 0;
+}
+.banner-content p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 23px;
+    padding-bottom: 50px;
+}
+.banner-content .banner-form{
+    width: 95%;
+    display: flex;
+    background-color: #fff;
+    border: 10px solid #fff;
+    border-radius: 5px;
+}
+.banner-form input{
+    width: 80%;
+    border: none;
+    padding: 18px;
+    margin-right: -5px;
+    font-size: 17px;
+}
+.banner-form input:focus{
+    outline: 0;
+    /* border: 2px solid #fff; */
+}
+.banner-content button{
+    color: #fff;
+    padding: 18px 30px;
+    background-color: var(--color-primary);
+    border: var(--color-primary);
+    border-radius: 5px;
+    font-size: 17px;
+}
+.banner-content button:hover{
+    background-color: #0b5ed7;
+}
+.clients-list {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+}
+.clients-list .clients-sec{  
+    width: 50%;
+    padding: 28px;
+}
+.clients-list .clients-sec .sec-count{
+    display: flex; 
+    justify-content: center;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    position: relative;
+}
+.clients-list .clients-sec .sec-count:after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-primary);
+    left: 0;
+    right: 0;
+    top: 45px;
+    margin: auto;
+    z-index: 3;
+}
+
+.clients-list .clients-sec p{
+    display: flex; 
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.banner-image{
+    width: 40%;
+}
+.banner-image .hero-img{
+    width: 100%;
+    padding-top: 80px;
+}
+
+
+
+/* ==========about sec========= */
+
+    .flex-about{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .flex-about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-text, 
+    .about-video{
+        width: 100%;
+        height: auto;  
+    }
+    
+    .about-title h3{
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 15px;
+        font-family: "Open Sans", sans-serif;
+        color: var(--color-default);
+    }
+    .about-title p{
+        font-size: 17px;
+        padding-bottom: 30px;
+        line-height: 25px;
+        font-family: "Open Sans", sans-serif;
+    }
+    .about-order{
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+    .about-order .about-icon{
+        position: absolute;
+    }
+    .about-order .about-content{
+        padding-left: 80px;
+    }
+    .about-order .about-icon{
+        text-align: left;
+        font-size: 50px;
+        color: blueviolet;
+    }
+    .about-order h4{
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 20px;
+        font-family: "Open Sans", sans-serif;
+        color: #19335c;
+    }
+    .about-order p{
+        font-size: 17px;
+        padding-bottom: 30px;
+        line-height: 25px;
+        font-family: "Open Sans", sans-serif;
+    }
+    .about-source{
+        width: 100%;
+    }
+
+/* ========about sec======= */
+/* =======service sec======= */
+
+
+.ourservices-title{
+    text-align: center;
+}
+.ourservices-title h2{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 2;
+    color: #001973;
+    padding-bottom: 30px;
+    margin-top: 0;
+}
+.ourservices-title span{
+    position: absolute;
+    margin-top: 14px; 
+    left: 0;
+    right: 0;
+    font-size: 56px;
+    font-weight: bold;
+    color: rgba(14, 29, 52, 0.06);
+    z-index: 1;
+    line-height: 0;
+}
+.ourservices-title h2:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    background: var(--color-primary);
+    margin: auto;
+}
+
+.flex-services{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+.flex-services .services{
+    width: 50%;
+    padding: 14px;
+
+}
+.services-image{
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+}
+.ser-image{
+    overflow: hidden;
+    
+}
+.services-sec{
+    border: 1px solid rgba(14, 29, 52, 0.15);
+    
+}
+.services-text h3{
+    padding:25px 30px;
+    color: var(--color-primary);
+    /* font-family: var(--font-primary); */
+    font-size: 18px;
+    font-weight: 700;
+}
+.services-text p{
+    padding:0 30px;
+    margin-bottom: 30px;
+    color: var(--color-secondary);
+    font-family: var(--font-default);
+    font-size: 15px;
+    line-height: 25px;
+}
+.services-sec:hover .services-image{
+    transform: scale(1.1);
+}
+}
